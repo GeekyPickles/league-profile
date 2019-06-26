@@ -1,0 +1,392 @@
+/*
+  *** TODO: fill in your header ***
+  Michael Sun
+  4/3/19
+
+  This style.css page defines the style of my about and bonus html pages.
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-image: repeating-linear-gradient(0deg, #b5b09a 0, #b5b09a 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #b5b09a 0, #b5b09a 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #b5b09b, #d9d3ba, #b5b09b);
+  font-family: "Noto Sans",sans-serif;
+
+  width: 95%;
+}
+
+body, a:link, .navlinks {
+  color: #4C483F;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.glitchlink:hover{
+  opacity: 0.5;
+  text-shadow: 0 0 #000000, 1px 1px #8a180e, 2px 2px #fc8e7f, 3px 3px #fefb8a,
+              -1px -1px #181985, -2px -2px #1d907f, -3px -3px #8cfdff;
+}
+
+.blur {
+  filter: blur(100px);
+}
+
+.invert {
+  filter: invert(100%);
+  width: 100%;
+  margin-left: 500px;
+
+}
+
+.huerotate {
+  filter: hue-rotate(90deg);
+
+}
+
+.contrast {
+  filter: contrast(500%);
+  height: 200px;
+}
+
+img {
+  height: 200px;
+  width: 400px;
+  padding:20px;
+}
+
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  opacity: 0.95;
+  margin-right:20px;
+  background-image: repeating-linear-gradient(0deg, #d3cdb5 0, #d3cdb5 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3cdb5 0, #d3cdb5 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #d9d3ba, #d9d3ba, #d9d3ba);
+  padding-bottom: 5px;
+  width:85%;
+
+}
+
+blockquote {
+border-style: thick;
+  border-width: thin;
+
+  border-color: #51ffff;
+
+}
+
+#mainhead {
+  margin: 0px 0px 0px 50px;
+  text-shadow: 8px 8px #a6a290;
+  text-align: left;
+  font-size: 60px;
+}
+
+.header {
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #4D4940;
+  color: #c0baa4;
+}
+
+nav {
+  height: 1325px;
+  width: 160px;
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  margin-top: 0px;
+
+  overflow: hidden;
+}
+
+div {
+  display:inline-block;
+}
+
+hr  {
+  border-style: solid;
+  margin-top:0px;
+  margin-bottom:0px;
+  border-top: 1px solid #5e5b4f;
+  border-bottom: 1px solid #5e5b4f;
+}
+
+.navlinks {
+  background-image: repeating-linear-gradient(0deg, #aba692 0, #aba692 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #aba692 0, #aba692 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #b0ab98, #b0ab98, #b0ab98);
+
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 25px;
+  width: 100%;
+  opacity: 0.50;
+}
+
+.navlinkcontent {
+  padding-left: 5px;
+  padding-right: 12px;
+}
+
+.navlinks:hover {
+  background-image: repeating-linear-gradient(0deg, #49463d 0, #49463d 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #49463d 0, #49463d 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #4c4940, #4c4940, #4c4940);
+  color: #c9c6b5;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.navlinks:hover .squarebullet{
+  background-color:#c9c6b5;
+}
+
+.squarebullet {
+  height: 7px;
+  width: 7px;
+  margin-bottom: 5px;
+  margin-right: 2px;
+  background-color: #4D4940;
+}
+
+.righttriangle  {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #4D4940;
+  border-bottom: 5px solid transparent;
+  float: left;
+}
+
+.newborder  {
+  width: 100%;
+
+}
+
+#cursorbar  {
+  float:left;
+}
+
+.largedivider{
+  margin-bottom: 10px;
+  margin-top:20px;
+  width: 100%;
+}
+
+.columns  {
+  column-count: 2;
+}
+
+.scrollbar  {
+  align-self: left;
+  width: 15%;
+  height: 100%;
+  background-image: repeating-linear-gradient(0deg, #aba692 0, #aba692 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #aba692 0, #aba692 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #b0ab98, #b0ab98, #b0ab98);
+}
+
+#largestdivider {
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+
+#firstheader  {
+  margin-top: 0px;
+}
+
+.huerotate  {
+  filter: hue-rotate(90deg);
+}
+
+.select {
+  cursor: pointer;
+}
+
+.first-btn {
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+#name-display {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.summonerIcon {
+  height: 50px;
+  width: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  padding: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#name-text {
+  margin: 0px;
+}
+
+.loading {
+  height: 350px;
+  width: 100%;
+  padding: 0px;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+  filter: sepia();
+}
+
+.akali {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: 100% 0.69444444444%;
+  width: 100px;
+  height: 100px;
+}
+
+.lane-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.champion-icon {
+  width: 100px;
+  height: 100px;
+}
+
+#match-history-box {
+  width: auto;
+  flex-direction: column;
+}
+
+.team-box {
+  flex-direction: row;
+  background-color: #4C483F;
+  color: #c0baa4;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.team {
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.match-history-champion-icon {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.content-box {
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.win  {
+  background-color: #1de5b0;
+}
+
+.loss {
+  background-color: #ef4f4c;
+}
+
+#match-history-box {
+
+}
+
+#match-history-box > div {
+  width: auto;
+  margin-top: 10px;
+}
+
+#info-display h2 {
+  margin-top: 0px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.player-div {
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.player-name {
+  margin: 0px;
+}
+
+.kda-box {
+  font-size: 25px;
+  padding-right: 20px;
+  width: 105px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.match-history-tab {
+  margin-bottom: 20px;
+  background-color: #c1b597;
+  border-radius: 10px 10px 0px 0px;
+  background-image: none;
+}
+
+#searchbar {
+  background-color: #f2eacd;
+  border-style: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 140px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#search-section {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  opacity: 1;
+}
+
+#search-button {
+  margin-right: auto;
+  margin-left: 20px;
+  background-color:
+}
+
+.error-message {
+  // auto won't work without specified width
+  width: 200px;
+  margin-left: 35%;
+  margin-right: auto;
+}

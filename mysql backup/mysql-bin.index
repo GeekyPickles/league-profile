@@ -1,0 +1,338 @@
+.\mysql-bin.000001
+.\mysql-bin.000002
+2019-05-01T05:21:05.241774Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-01T05:21:05.244003Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-01T05:21:05.245477Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-01T05:21:05.247037Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-01T05:21:05.249365Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-01T05:21:05.251100Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-01T05:21:05.258257Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-01T05:21:05.269022Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-01T05:21:05.445973Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-01T05:21:05.682310Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-01T05:21:05.683614Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-01T05:21:05.770890Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-01T05:21:05.777723Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-01T05:21:05.779136Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-01T05:21:05.780630Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-01T05:21:05.832096Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589209
+2019-05-01T05:21:05.833559Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-01T05:21:05.833699Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-01T05:21:05.845685Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190430 22:21:05
+.\mysql-bin.000003
+2019-05-16T17:57:40.152274Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-16T17:57:40.153976Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-16T17:57:40.154840Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-16T17:57:40.155846Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-16T17:57:40.162236Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-16T17:57:40.167600Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-16T17:57:40.173572Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-16T17:57:40.187053Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-16T17:57:40.278692Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-16T17:57:40.282821Z 0 [Note] InnoDB: Log scan progressed past the checkpoint lsn 2589228
+2019-05-16T17:57:40.283819Z 0 [Note] InnoDB: Doing recovery: scanned up to log sequence number 2589237
+2019-05-16T17:57:40.284871Z 0 [Note] InnoDB: Database was not shutdown normally!
+2019-05-16T17:57:40.285703Z 0 [Note] InnoDB: Starting crash recovery.
+2019-05-16T17:57:40.960654Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2019-05-16T17:57:40.961626Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-16T17:57:40.962944Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-16T17:57:41.039525Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-16T17:57:41.046495Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-16T17:57:41.047739Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-16T17:57:41.049118Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-16T17:57:41.100860Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-16T17:57:41.152773Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589237
+2019-05-16T17:57:41.155061Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-16T17:57:41.157749Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-16T17:57:41.376332Z 0 [Note] Recovering after a crash using mysql-bin
+2019-05-16T17:57:41.377524Z 0 [Note] Starting crash recovery...
+2019-05-16T17:57:41.379046Z 0 [Note] Crash recovery finished.
+2019-05-16T17:57:41.436567Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190516 10:57:41
+.\mysql-bin.000004
+.\mysql-bin.000005
+.\mysql-bin.000006
+.\mysql-bin.000007
+.\mysql-bin.000008
+.\mysql-bin.000009
+.\mysql-bin.000010
+.\mysql-bin.000011
+.\mysql-bin.000012
+.\mysql-bin.000013
+.\mysql-bin.000014
+.\mysql-bin.000015
+.\mysql-bin.000016
+.\mysql-bin.000017
+.\mysql-bin.000018
+2019-05-17T18:54:22.569937Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-17T18:54:22.571068Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-17T18:54:22.571748Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-17T18:54:22.572481Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-17T18:54:22.573763Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-17T18:54:22.574649Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-17T18:54:22.578883Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-17T18:54:22.587482Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-17T18:54:22.831570Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-17T18:54:23.417581Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-17T18:54:23.418906Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-17T18:54:23.550761Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-17T18:54:23.557432Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-17T18:54:23.558740Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-17T18:54:23.560148Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-17T18:54:23.611534Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589657
+2019-05-17T18:54:23.612733Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-17T18:54:23.612848Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-17T18:54:23.621620Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190517 11:54:23
+.\mysql-bin.000019
+2019-05-17T18:54:24.052021Z 0 [Warning] InnoDB: Table mysql/innodb_table_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+2019-05-17T18:54:24.053597Z 0 [Warning] InnoDB: Table mysql/innodb_index_stats has length mismatch in the column name table_name.  Please run mysql_upgrade
+mysqld: File '2019-05-17T18:54:23.621620Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190517 11:54:23' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.056302Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.621620Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190517 11:54:23', errno 13)
+2019-05-17T18:54:24.058327Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.612848Z 0 [Note] Plugin 'FEDERATED' is disabled.' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.059058Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.612848Z 0 [Note] Plugin 'FEDERATED' is disabled.', errno 13)
+2019-05-17T18:54:24.060470Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.612733Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool' not found (Errcode: 2 - No such file or directory)
+2019-05-17T18:54:24.061374Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.612733Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool', errno 2)
+2019-05-17T18:54:24.063186Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.611534Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589657' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.063911Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.611534Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589657', errno 13)
+2019-05-17T18:54:24.065514Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.560148Z 0 [Note] InnoDB: Waiting for purge to start' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.066231Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.560148Z 0 [Note] InnoDB: Waiting for purge to start', errno 13)
+2019-05-17T18:54:24.067812Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.558740Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.068562Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.558740Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.', errno 13)
+2019-05-17T18:54:24.070211Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.557432Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.070990Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.557432Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.', errno 13)
+2019-05-17T18:54:24.072971Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.550761Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.' not found (Errcode: 2 - No such file or directory)
+2019-05-17T18:54:24.073807Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.550761Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.', errno 2)
+2019-05-17T18:54:24.075497Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.418906Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...' not found (Errcode: 2 - No such file or directory)
+2019-05-17T18:54:24.076253Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.418906Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...', errno 2)
+2019-05-17T18:54:24.078379Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:23.417581Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.079106Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:23.417581Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables', errno 13)
+2019-05-17T18:54:24.080837Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.831570Z 0 [Note] InnoDB: Highest supported file format is Barracuda.' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.081622Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.831570Z 0 [Note] InnoDB: Highest supported file format is Barracuda.', errno 13)
+2019-05-17T18:54:24.083373Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.587482Z 0 [Note] InnoDB: Completed initialization of buffer pool' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.084126Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.587482Z 0 [Note] InnoDB: Completed initialization of buffer pool', errno 13)
+2019-05-17T18:54:24.085801Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.578883Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.086560Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.578883Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M', errno 13)
+2019-05-17T18:54:24.088539Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.574649Z 0 [Note] InnoDB: Not using CPU crc32 instructions' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.089341Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.574649Z 0 [Note] InnoDB: Not using CPU crc32 instructions', errno 13)
+2019-05-17T18:54:24.091194Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.573763Z 0 [Note] InnoDB: Number of pools: 1' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.092167Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.573763Z 0 [Note] InnoDB: Number of pools: 1', errno 13)
+2019-05-17T18:54:24.093662Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.572481Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.094391Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.572481Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11', errno 13)
+2019-05-17T18:54:24.095971Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.571748Z 0 [Note] InnoDB: Memory barrier is not used' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.096723Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.571748Z 0 [Note] InnoDB: Memory barrier is not used', errno 13)
+2019-05-17T18:54:24.098228Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.571068Z 0 [Note] InnoDB: Uses event mutexes' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.098944Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.571068Z 0 [Note] InnoDB: Uses event mutexes', errno 13)
+2019-05-17T18:54:24.100351Z 0 [ERROR] Could not open log file
+mysqld: File '2019-05-17T18:54:22.569937Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions' not found (Errcode: 13 - Permission denied)
+2019-05-17T18:54:24.101094Z 0 [ERROR] Failed to open log (file '2019-05-17T18:54:22.569937Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions', errno 13)
+2019-05-17T18:54:24.102875Z 0 [ERROR] Could not open log file
+2019-05-17T18:54:24.196737Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2019-05-17T18:54:24.198575Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2019-05-17T18:54:24.199712Z 0 [Note] IPv6 is available.
+2019-05-17T18:54:24.200296Z 0 [Note]   - '::' resolves to '::';
+2019-05-17T18:54:24.201059Z 0 [Note] Server socket created on IP: '::'.
+2019-05-17T18:54:24.231066Z 0 [Note] Failed to start slave threads for channel ''
+2019-05-17T18:54:24.248827Z 0 [Note] Event Scheduler: Loaded 0 events
+2019-05-17T18:54:24.249655Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.7.24-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+2019-05-17T18:54:24.294138Z 2 [Note] Got an error reading communication packets
+2019-05-17T18:54:25.568462Z 3 [Note] Access denied for user 'root'@'localhost' (using password: NO)
+2019-05-17T19:01:52.435768Z 4 [Note] Got an error reading communication packets
+2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown
+
+2019-05-17T19:01:52.570622Z 0 [Note] Giving 0 client threads a chance to die gracefully
+2019-05-17T19:01:52.571814Z 0 [Note] Shutting down slave threads
+2019-05-17T19:01:52.572525Z 0 [Note] Forcefully disconnecting 0 remaining clients
+2019-05-17T19:01:52.573330Z 0 [Note] Event Scheduler: Purging the queue. 0 events
+2019-05-17T19:01:52.574704Z 0 [Note] Binlog end
+2019-05-17T19:02:03.325238Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-17T19:02:03.326351Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-17T19:02:03.327091Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-17T19:02:03.327849Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-17T19:02:03.329145Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-17T19:02:03.329923Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-17T19:02:03.334085Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-17T19:02:03.341760Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-17T19:02:03.387363Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-17T19:02:03.485332Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-17T19:02:03.486741Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-17T19:02:03.574241Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-17T19:02:03.582087Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-17T19:02:03.583284Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-17T19:02:03.584652Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-17T19:02:03.635662Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589685
+2019-05-17T19:02:03.636867Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-17T19:02:03.636965Z 0 [Note] Plugin 'FEDERATED' is disabled.
+mysqld: File '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown' not found (Errcode: 13 - Permission denied)
+2019-05-17T19:02:03.644589Z 0 [ERROR] Failed to open log (file '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown', errno 13)
+2019-05-17T19:02:03.646353Z 0 [ERROR] Could not open log file
+2019-05-17T19:02:03.647179Z 0 [ERROR] Can't init tc log
+2019-05-17T19:02:03.647745Z 0 [ERROR] Aborting
+
+2019-05-17T19:02:03.648211Z 0 [Note] Binlog end
+2019-05-17T20:26:20.133634Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-17T20:26:20.134862Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-17T20:26:20.135531Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-17T20:26:20.136254Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-17T20:26:20.137413Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-17T20:26:20.138230Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-17T20:26:20.142382Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-17T20:26:20.149948Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-17T20:26:20.208200Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-17T20:26:20.753597Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-17T20:26:20.754949Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-17T20:26:20.836820Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-17T20:26:20.931426Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-17T20:26:20.932599Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-17T20:26:20.933999Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-17T20:26:20.986177Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589739
+2019-05-17T20:26:20.987347Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-17T20:26:20.987440Z 0 [Note] Plugin 'FEDERATED' is disabled.
+mysqld: File '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown' not found (Errcode: 13 - Permission denied)
+2019-05-17T20:26:20.997664Z 0 [ERROR] Failed to open log (file '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown', errno 13)
+2019-05-17T20:26:20.999559Z 0 [ERROR] Could not open log file
+2019-05-17T20:26:21.000339Z 0 [ERROR] Can't init tc log
+2019-05-17T20:26:21.000927Z 0 [ERROR] Aborting
+
+2019-05-17T20:26:21.000781Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190517 13:26:21
+2019-05-17T20:26:21.001559Z 0 [Note] Binlog end
+2019-05-25T22:05:24.204308Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-25T22:05:24.205426Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-25T22:05:24.206078Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-25T22:05:24.206808Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-25T22:05:24.212636Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-25T22:05:24.217791Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-25T22:05:24.222572Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-25T22:05:24.234895Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-25T22:05:24.297007Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-25T22:05:24.796729Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-25T22:05:24.798079Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-25T22:05:24.891026Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-25T22:05:24.951953Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-25T22:05:24.953183Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-25T22:05:24.954497Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-25T22:05:25.006349Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589796
+2019-05-25T22:05:25.018136Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-25T22:05:25.019748Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-25T22:05:25.172949Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190525 15:05:25
+mysqld: File '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown' not found (Errcode: 13 - Permission denied)
+2019-05-25T22:05:25.341775Z 0 [ERROR] Failed to open log (file '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown', errno 13)
+2019-05-25T22:05:25.343587Z 0 [ERROR] Could not open log file
+2019-05-25T22:05:25.344182Z 0 [ERROR] Can't init tc log
+2019-05-25T22:05:25.344743Z 0 [ERROR] Aborting
+
+2019-05-25T22:05:25.345208Z 0 [Note] Binlog end
+2019-05-25T22:06:17.233701Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-25T22:06:17.235064Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-25T22:06:17.235897Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-25T22:06:17.236847Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-25T22:06:17.238331Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-25T22:06:17.239303Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-25T22:06:17.244819Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-25T22:06:17.256531Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-25T22:06:17.587239Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-25T22:06:17.747499Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-25T22:06:17.748907Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-25T22:06:17.839793Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-25T22:06:17.846956Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-25T22:06:17.848279Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-25T22:06:17.849622Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-25T22:06:17.900567Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589815
+2019-05-25T22:06:17.901824Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-25T22:06:17.901895Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-25T22:06:17.908577Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190525 15:06:17
+.\mysql-bin.000020
+2019-05-31T22:19:40.286870Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-31T22:19:40.295408Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-31T22:19:40.296086Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-31T22:19:40.296834Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-31T22:19:40.298043Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-31T22:19:40.298814Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-31T22:19:40.302987Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-31T22:19:40.310421Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-31T22:19:40.358187Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-31T22:19:40.465864Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-31T22:19:40.467290Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-31T22:19:40.542439Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-31T22:19:40.554396Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-31T22:19:40.556132Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-31T22:19:40.557935Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-31T22:19:40.609844Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589938
+2019-05-31T22:19:40.611159Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-31T22:19:40.611259Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-31T22:19:40.613754Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190531 15:19:40
+mysqld: File '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown' not found (Errcode: 13 - Permission denied)
+2019-05-31T22:19:40.617319Z 0 [ERROR] Failed to open log (file '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown', errno 13)
+2019-05-31T22:19:40.619005Z 0 [ERROR] Could not open log file
+2019-05-31T22:19:40.619622Z 0 [ERROR] Can't init tc log
+2019-05-31T22:19:40.620202Z 0 [ERROR] Aborting
+
+2019-05-31T22:19:40.620700Z 0 [Note] Binlog end
+2019-05-31T22:48:14.414638Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-31T22:48:14.415774Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-31T22:48:14.416439Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-31T22:48:14.417178Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-31T22:48:14.418371Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-31T22:48:14.419310Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-31T22:48:14.424571Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-31T22:48:14.440235Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-31T22:48:14.504826Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-31T22:48:14.790005Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-31T22:48:14.791353Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-31T22:48:14.891799Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-31T22:48:14.900010Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-31T22:48:14.901275Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-31T22:48:14.902654Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-31T22:48:14.954213Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589957
+2019-05-31T22:48:14.955459Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-31T22:48:14.955751Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-31T22:48:14.958420Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190531 15:48:14
+mysqld: File '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown' not found (Errcode: 13 - Permission denied)
+2019-05-31T22:48:14.962276Z 0 [ERROR] Failed to open log (file '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown', errno 13)
+2019-05-31T22:48:14.964060Z 0 [ERROR] Could not open log file
+2019-05-31T22:48:14.964770Z 0 [ERROR] Can't init tc log
+2019-05-31T22:48:14.965392Z 0 [ERROR] Aborting
+
+2019-05-31T22:48:14.965894Z 0 [Note] Binlog end
+2019-05-31T23:09:42.682981Z 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2019-05-31T23:09:42.684085Z 0 [Note] InnoDB: Uses event mutexes
+2019-05-31T23:09:42.684743Z 0 [Note] InnoDB: Memory barrier is not used
+2019-05-31T23:09:42.685692Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2019-05-31T23:09:42.686884Z 0 [Note] InnoDB: Number of pools: 1
+2019-05-31T23:09:42.687805Z 0 [Note] InnoDB: Not using CPU crc32 instructions
+2019-05-31T23:09:42.692516Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2019-05-31T23:09:42.700804Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2019-05-31T23:09:42.745888Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2019-05-31T23:09:42.844899Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2019-05-31T23:09:42.862977Z 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2019-05-31T23:09:43.006074Z 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2019-05-31T23:09:43.013074Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2019-05-31T23:09:43.014302Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2019-05-31T23:09:43.015723Z 0 [Note] InnoDB: Waiting for purge to start
+2019-05-31T23:09:43.066889Z 0 [Note] InnoDB: 5.7.24 started; log sequence number 2589995
+2019-05-31T23:09:43.068164Z 0 [Note] InnoDB: Loading buffer pool(s) from C:\MAMP\db\mysql\ib_buffer_pool
+2019-05-31T23:09:43.068238Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2019-05-31T23:09:43.070894Z 0 [Note] InnoDB: Buffer pool(s) load completed at 190531 16:09:43
+mysqld: File '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown' not found (Errcode: 13 - Permission denied)
+2019-05-31T23:09:43.074768Z 0 [ERROR] Failed to open log (file '2019-05-17T19:01:52.569513Z 0 [Note] C:\MAMP\\bin\mysql\bin\mysqld.exe: Normal shutdown', errno 13)
+2019-05-31T23:09:43.076477Z 0 [ERROR] Could not open log file
+2019-05-31T23:09:43.077122Z 0 [ERROR] Can't init tc log
+2019-05-31T23:09:43.077716Z 0 [ERROR] Aborting
+
+2019-05-31T23:09:43.078225Z 0 [Note] Binlog end
