@@ -356,7 +356,7 @@ hr  {
 
 .match-history-tab {
   margin-bottom: 20px;
-  background-color: #c1b597;
+  background-color: #a0967b;
   border-radius: 10px 10px 0px 0px;
   background-image: none;
 }
@@ -389,4 +389,40 @@ hr  {
   width: 200px;
   margin-left: 35%;
   margin-right: auto;
+}
+
+.mastery-level{
+  width: 50px;
+  height: 50px;
+  padding-right: 0px;
+}
+
+.mastery-champion {
+  width: 50px;
+  height: 50px;
+}
+
+#general-info {
+  background-image: repeating-linear-gradient(0deg, #b5b09a 0, #b5b09a 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #b5b09a 0, #b5b09a 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #b5b09b, #d9d3ba, #b5b09b);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#add-matches-button, #match-history-button{
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+#info-display #mastery-header {
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+}
+
+#mastery-container {
+  margin: 20px;
+  background-image: repeating-linear-gradient(0deg, #d3cdb5 0, #d3cdb5 2px,
+    transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3cdb5 0, #d3cdb5 2px,
+      transparent 2px, transparent 4px), linear-gradient(0.25turn, #d9d3ba, #d9d3ba, #d9d3ba);
 }

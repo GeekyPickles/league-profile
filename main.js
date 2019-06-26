@@ -1,9 +1,7 @@
 // Name: Michael Sun
-// Date: 5/17/19
-// Section: Valerie
 //
 // This JavaScript file encapsulates the functions and behaviors of my
-// index.html page.
+// League profile viewer
 
 (function() {
   "use strict";
@@ -16,6 +14,7 @@
   const MATCH = "/lol/match/v4/matches/";
   const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
   const OPGG_URL = "http://opgg-static.akamaized.net/images/profile_icons/profileIcon";
+  const CHAMPION_MASTERY = "/lol/champion-mastery/v4/champion-masteries/by-summoner/";
   // API Key, needs to be updated every 24 hrs
   const API_KEY = "?api_key=RGAPI-89e3b99e-bbfd-4112-bc4a-b68b148eb6ba";
 
@@ -118,6 +117,8 @@
     let nameDisplay = document.getElementById("name-display");
     let profileDisplay = document.getElementById("info-display");
     let summonerIcon = document.createElement("img");
+    let generalInfo = document.createElement("div");
+    let summonerLevelDisplay = document.createElement("p");
 
     while (profileDisplay.firstChild) {
       profileDisplay.removeChild(profileDisplay.firstChild);
@@ -134,12 +135,62 @@
     nameDisplay.appendChild(summonerIcon);
     nameDisplay.appendChild(nameText);
     nameText.innerText = responseData["name"];
-    profileDisplay.innerText += "Summoner Level: " + summonerLevel +"\n";
 
+    summonerLevelDisplay.innerText += "Summoner Level: " + summonerLevel + "\n";
+
+    profileDisplay.appendChild(generalInfo);
+    generalInfo.appendChild(summonerLevelDisplay);
+    generalInfo.setAttribute("id", "general-info");
+
+    makeRequest(PROXY_URL + RIOT_URL + CHAMPION_MASTERY + responseData["id"] + API_KEY,
+                loadMastery, checkStatusJSON);
+  }
+
+  function loadMastery(responseData) {
+    let generalInfo = document.getElementById("general-info");
+    let masteryContainer = document.createElement("div");
+    let newHeader = document.createElement("h2");
+
+    masteryContainer.setAttribute("id","mastery-container");
+    newHeader.classList.add("header");
+    newHeader.innerText = "Champion Mastery";
+    newHeader.setAttribute("id", "mastery-header");
+    masteryContainer.appendChild(newHeader);
+
+    if (responseData.length >= 3) {
+      for (let i = 0; i < 3; i++) {
+        let newMasteryBox = document.createElement("div");
+        let masteryLevel = document.createElement("img");
+        let masteryChampion = document.createElement("img");
+        let championName = championIdToName(responseData[i]["championId"]);
+
+        newMasteryBox.classList.add("mastery-box");
+
+        masteryLevel.src = "masteryicons/" + responseData[i]["championLevel"] + ".png";
+        masteryLevel.alt = responseData[i]["championLevel"];
+        masteryLevel.classList.add("mastery-level");
+
+        masteryChampion.src = "championIcons/" + championName + "Square.png";
+        masteryChampion.alt = championName;
+        masteryChampion.classList.add("mastery-champion");
+
+        newMasteryBox.appendChild(masteryLevel);
+        newMasteryBox.appendChild(masteryChampion);
+
+        masteryContainer.appendChild(newMasteryBox);
+      }
+    }
+    else if (responseData.length == 0){
+
+    }
+    else {
+
+    }
+    generalInfo.appendChild(masteryContainer);
     let matchHistoryButton = document.createElement("button");
     matchHistoryButton.innerText = "Load Match History";
     matchHistoryButton.setAttribute("id", "match-history-button");
-    profileDisplay.appendChild(matchHistoryButton);
+    generalInfo.appendChild(matchHistoryButton);
     matchHistoryButton.addEventListener("click", function() {
       makeRequest(PROXY_URL + RIOT_URL + MATCHLIST + summonerData["accountId"] + API_KEY,
                   loadMatchHistory, checkStatusJSON);
@@ -158,8 +209,8 @@
     });
     addMatches.setAttribute("id", "add-matches-button");
     addMatches.innerText = "Load " + INITIAL_LOAD + " More Matches";
-    let profileDisplay = document.getElementById("info-display");
-    profileDisplay.appendChild(addMatches);
+    let generalInfo = document.getElementById("general-info");
+    generalInfo.appendChild(addMatches);
 
     //preparing match history box
     infoDisplay.appendChild(matchHistoryBox);
@@ -508,9 +559,7 @@
       return Promise.reject(new Error(response.status + ": " + response.statusText));
     }
    }
-  /* ------------------------------ Helper Functions  ------------------------------ */
-  // Note: You may use these in your code, but do remember that your code should not have
-  // any functions defined that are unused.
+
   /**
    * Returns the first element that matches the given CSS selector.
    * @param {string} query - CSS query selector.
