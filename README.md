@@ -6,3 +6,7 @@
 
 ## To Do:
 -Use Riot static API for champion icons
+
+-Account for remakes
+
+-Improve position identifier
