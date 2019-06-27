@@ -48,6 +48,7 @@
   let summonerData;
   let loadedMatches = 0;
   let matches;
+  let pageOwnerId;
 
   window.addEventListener("load", initialize);
    /**
@@ -193,8 +194,9 @@
     matchHistoryButton.innerText = "Load Match History";
     matchHistoryButton.setAttribute("id", "match-history-button");
     generalInfo.appendChild(matchHistoryButton);
+    pageOwnerId = summonerData["accountId"];
     matchHistoryButton.addEventListener("click", function() {
-      makeRequest(PROXY_URL + RIOT_URL + MATCHLIST + summonerData["accountId"] + API_KEY,
+      makeRequest(PROXY_URL + RIOT_URL + MATCHLIST + pageOwnerId + API_KEY,
                   loadMatchHistory, checkStatusJSON);
     });
   }
@@ -309,7 +311,7 @@
 
   function fillTeams(responseData) {
     let thisMatch = qsa("#a" + responseData["gameId"] + " .content-box");
-    let userChampion = qsa("#a" + responseData["gameId"] + " .champion-icon");
+    //let userChampion = qsa("#a" + responseData["gameId"] + " .champion-icon");
     let teamBox = document.createElement("div");
     let team1 = document.createElement("div");
     let team2 = document.createElement("div");
@@ -361,14 +363,20 @@
         team2.appendChild(playerDiv);
       }
 
-      if (championName == userChampion[0].alt) {
+      if (pageOwnerId == playerIdentities[i]["player"]["accountId"]) {
         currentTeam = currentTeam / 100 - 1;
         let winLose = responseData["teams"][currentTeam]["win"];
-        if (winLose == "Win") {
-          thisMatch[0].classList.add("win");
+
+        if (responseData["gameDuration"] <= 270) {
+          thisMatch[0].classList.add("remake");
         }
         else {
-          thisMatch[0].classList.add("loss");
+          if (winLose == "Win") {
+            thisMatch[0].classList.add("win");
+          }
+          else {
+            thisMatch[0].classList.add("loss");
+          }  
         }
         let kdaBox = document.createElement("div");
         kdaBox.classList.add("kda-box");
