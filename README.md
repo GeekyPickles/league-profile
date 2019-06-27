@@ -17,7 +17,11 @@
 
 ### Match Card Features
 -KDA
+
 -CS score
+
 -Game outcome
+
 -Champions played
+
 -Items purchased
