@@ -7,7 +7,7 @@
 -Highest mastery champions
 
 ## To Do:
-**Bug in blindpick matches were someone on enemy team has same champion as currently loaded profile's user**
+**Bug in blindpick matches where someone on enemy team has same champion as currently loaded profile's user**
 
 -Use Riot static API for champion icons
 
