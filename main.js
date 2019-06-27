@@ -16,7 +16,7 @@
   const OPGG_URL = "http://opgg-static.akamaized.net/images/profile_icons/profileIcon";
   const CHAMPION_MASTERY = "/lol/champion-mastery/v4/champion-masteries/by-summoner/";
   // API Key, needs to be updated every 24 hrs
-  const API_KEY = "?api_key=RGAPI-89e3b99e-bbfd-4112-bc4a-b68b148eb6ba";
+  const API_KEY = "?api_key=RGAPI-ec0f8340-8561-4111-a87a-1ed9c66248f8";
 
   const DDRAGON_URL = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/";
   const DDRAGON_SPLASH = "champion/splash/";
@@ -170,7 +170,9 @@
         masteryLevel.alt = responseData[i]["championLevel"];
         masteryLevel.classList.add("mastery-level");
 
-        masteryChampion.src = "championIcons/" + championName + "Square.png";
+        // changedhere
+        masteryChampion.src = "championicons/" + championName + "Square.png";
+        //masteryChampion.src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/" + championName + ".png";
         masteryChampion.alt = championName;
         masteryChampion.classList.add("mastery-champion");
 
@@ -277,14 +279,17 @@
     laneIcon.classList.add("lane-icon");
 
     championIcon.alt = championName;
+    //changedhere
     championIcon.src = "championicons/" + championName + "Square.png";
+    //championIcon.src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/" + championName + ".png";
+
     championIcon.classList.add("champion-icon");
     newMatch.alt = championName;
 
     newHeader.classList.add("header");
     newHeader.innerText = queueName;
 
-    newMatch.style.backgroundImage = DDRAGON_URL + DDRAGON_SPLASH + championName + "0_jpg";
+    newMatch.style.backgroundImage = PROXY_URL + DDRAGON_URL + DDRAGON_SPLASH + championName + "0_jpg";
 
     contentBox.classList.add("flex");
     contentBox.classList.add("content-box");
@@ -341,7 +346,9 @@
         makeRequest(PROXY_URL + RIOT_URL + SUMMONERS_BY_NAME + summonerName + API_KEY, createSummonerPage, checkStatusJSON);
       });
 
+      //changedhere
       newChampion.src = "championicons/" + championName + "Square.png";
+      //newChampion.src = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/" + championName + ".png";
       newChampion.alt = championName;
       newChampion.classList.add("match-history-champion-icon");
 
@@ -537,7 +544,16 @@
       errorMessage.classList.add("error-message");
       profileDisplay.removeChild(loadingGif);
 
-      errorMessage.innerText = "ERROR 404: SUMMONER NOT FOUND";
+      if (response.status == "429") {
+        errorMessage.innerText = "ERROR 429: TOO MANY REQUESTS";
+      }
+      else if (response.status == "404") {
+        errorMessage.innerText = "ERROR 404: SUMMONER NOT FOUND";
+      }
+
+      else {
+        errorMessage.innerText = "ERROR" + response.status;
+      }
       profileDisplay.appendChild(errorMessage);
       return Promise.reject(new Error(response.status + ": " + response.statusText));
 
