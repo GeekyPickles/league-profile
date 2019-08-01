@@ -26,6 +26,7 @@
   const YORHA_MASTERY = "?mastery=";
   const YORHA_MATCHLIST = "?matchlist=";
   const YORHA_MATCH = "?matches=";
+  const YORHA_TIMELINE = "?timeline=";
   // pod URL suffix
 
   // need to account for >100 matches loaded
@@ -50,6 +51,8 @@
   let loadedMatches = 0;
   let matches;
   let pageOwnerId;
+  let matchDetails = [];
+
 
   window.addEventListener("load", initialize);
    /**
@@ -209,10 +212,11 @@
 
   function loadWinrate() {
     let infoBox = document.getElementById("general-info");
-    let pieChart = document.createElement("svg");
+    let winrateBox = document.createElement("section");
+    let newHeader = document.createElement("h2");
+
+
     let svgContainer = document.createElement("g");
-
-
   }
 
   function loadMatchHistory(responseData) {
@@ -329,6 +333,7 @@
     let teamBox = document.createElement("div");
     let team1 = document.createElement("div");
     let team2 = document.createElement("div");
+    matchDetails[responseData["gameId"]]= responseData;
 
     teamBox.classList.add("flex");
     teamBox.classList.add("team-box");
@@ -405,8 +410,74 @@
     teamBox.appendChild(team2);
     thisMatch[0].appendChild(teamBox);
 
+    // build map button
+    createMapButton(thisMatch[0], responseData["gameId"]);
+
     scrambleTargets = qsa("h1, h2, h3, p, a, li");
     images = qsa("img");
+  }
+
+  function createCloseMapButton(currentMatch) {
+    let contentBox = qsa("#a" + currentMatch + " .content-box");
+    contentBox = contentBox[0];
+    let closeMapButton = document.createElement("img");
+
+    closeMapButton.src = "generalassets/minimap.png";
+    closeMapButton.classList.add("close-map-button");
+    closeMapButton.addEventListener("click", function() {
+      closeMap(currentMatch);
+      this.parentElement.removeChild(this);
+    });
+    contentBox.appendChild(closeMapButton);
+  }
+
+  function closeMap(currentMatch) {
+    let contentBox = qsa("#a" + currentMatch + " .content-box");
+    let mapBox = qsa("#a" + currentMatch + " .map-box");
+    let closeButton = qsa("#a" + currentMatch + " .close-map-button");
+
+    contentBox = contentBox[0];
+    mapBox = mapBox[0];
+    closeButton = closeButton[0];
+
+    createMapButton(contentBox, currentMatch);
+    mapBox.parentElement.removeChild(mapBox);
+  }
+
+  function createMapButton(thisMatch, gameId) {
+    let mapButton = document.createElement("img");
+
+    mapButton.src = "generalassets/minimap.png";
+    mapButton.classList.add("map-button");
+    mapButton.addEventListener("click", function() {
+      makeRequest(URL + YORHA_TIMELINE + gameId, showMap, checkStatusJSON)
+
+      this.parentElement.removeChild(this);
+    });
+    thisMatch.appendChild(mapButton);
+  }
+
+  function showMap(responseData) {
+    let mapBox = document.createElement("div");
+    let currentMatch = document.getElementById("a" + responseData["gameId"]);
+    let miniMap = document.createElement("img");
+    let infoBox = document.createElement("div");
+    let matchTime = document.createElement("p");
+
+    createCloseMapButton(responseData["gameId"]);
+
+    miniMap.classList.add("minimap");
+    miniMap.src = "generalassets/minimap.png";
+    mapBox.classList.add("flex");
+    mapBox.classList.add("map-box");
+    infoBox.classList.add("timeline-info-box");
+    infoBox.classList.add("flex");
+    matchTime.textContent = "00:00";
+
+
+    currentMatch.appendChild(mapBox);
+    mapBox.appendChild(miniMap);
+
   }
 
   function openMatch(responseData) {
@@ -818,6 +889,7 @@
       case 142: return "Zoe"; break;
       case 164: return "Camille"; break;
       case 497: return "Rakan"; break;
+      case 246: return "Qiyana"; break;
     }
     return id;
   }

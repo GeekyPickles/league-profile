@@ -4,10 +4,11 @@
   $CHAMPION_MASTERY = "/lol/champion-mastery/v4/champion-masteries/by-summoner/";
   $MATCHLIST = "/lol/match/v4/matchlists/by-account/";
   $MATCH = "/lol/match/v4/matches/";
+  $TIMELINE = "/lol/match/v4/timelines/by-match/";
   $PROXY_URL = "https://cors-anywhere.herokuapp.com/";
   $OPGG_URL = "http://opgg-static.akamaized.net/images/profile_icons/profileIcon";
   // API Key, needs to be updated every 24 hrs
-  $API_KEY = "?api_key=RGAPI-f74bd49f-d4bd-448d-a5df-3ebcfc0d1bff";
+  $API_KEY = "?api_key=RGAPI-87aa7124-8af7-4df7-bed8-d9520a4d5ea2";
 
   $DDRAGON_URL = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/";
   $DDRAGON_SPLASH = "champion/splash/";
@@ -96,6 +97,16 @@
     header("Content-Type: application/json");
     $matchid = $_GET["matches"];
     $response = file_get_contents($RIOT_URL . $MATCH . $matchid . $API_KEY);
+    echo $response;
+  }
+
+  else if (isset($_GET["timeline"])) {
+    header("Content-Type: application/json");
+    $matchid = $_GET["timeline"];
+    $response = file_get_contents($RIOT_URL . $TIMELINE . $matchid . $API_KEY);
+    $response = json_decode($response);
+    $response->gameId = $matchid;
+    $response = json_encode($response);
     echo $response;
   }
 

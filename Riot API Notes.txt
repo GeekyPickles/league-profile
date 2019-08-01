@@ -15,9 +15,9 @@ queue: 420 Ranked Solo
 queue: 450 ARAM
 queue: 440 Flex
 
-Lane identification
-https://riotapi.dev/en/latest/roleid.html
 
+
+Timelines by ms
 
 Remade Game
 

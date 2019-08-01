@@ -13,7 +13,7 @@ body {
       transparent 2px, transparent 4px), linear-gradient(0.25turn, #b5b09b, #d9d3ba, #b5b09b);
   font-family: "Noto Sans",sans-serif;
 
-  width: 95%;
+
 }
 
 body, a:link, .navlinks {
@@ -316,15 +316,19 @@ hr  {
 }
 
 .win  {
-  background-color: #1de5b0;
+  /*background-color: #1de5b0;*/
+  background-color: #a2f58c;
 }
 
 .loss {
-  background-color: #ef4f4c;
+  /*background-color: #ef4f4c;*/
+  background-color: #faafed;
+  /*background-color: #fa8787;*/
+
 }
 
 .remake {
-  background-color: #26dae0;
+  background-color: #eded74;
 }
 
 #match-history-box {
@@ -373,6 +377,10 @@ hr  {
   width: 140px;
   font-size: 15px;
   text-align: center;
+  background-image: url("generalassets/yorhasymbol.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 #search-section {
@@ -429,4 +437,134 @@ hr  {
   background-image: repeating-linear-gradient(0deg, #d3cdb5 0, #d3cdb5 2px,
     transparent 2px, transparent 4px), repeating-linear-gradient(90deg, #d3cdb5 0, #d3cdb5 2px,
       transparent 2px, transparent 4px), linear-gradient(0.25turn, #d9d3ba, #d9d3ba, #d9d3ba);
+}
+
+/* nonstandard selector, only works in Chrome, Safari, and Opera */
+
+/* width */
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background: #f2eacd;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #4D4940;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 #000000, 0px 3px #bf1717, 0px 4px #fefb8a, 0px 5px #ffff57,
+              0px -3px #181985, 0px -4px #1d907f, 0px -5px #8cfdff;
+}
+
+/*glitch tutorial https://css-tricks.com/css-attr-function-got-nothin-custom-properties/*/
+.glitch {
+  position: relative;
+}
+
+.glitchscreen::before,
+.glitchscreen::after {
+  display: block;
+}
+
+.glitchscreen::before {
+  left: 2px;
+  animation-name: move;
+  animation-duration: 4s;
+  content: inherit;
+}
+
+.glitchscreen:after {
+  content: inherit;
+  left: -2px;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-delay: 0.2s;
+}
+
+.glitch::before,
+.glitch::after {
+  position: absolute;
+  content: "HOME";
+}
+
+@-webkit-keyframes move {
+    0% {
+      clip: rect(10px, 450px, 76px, 0);
+    }
+    10% {
+      clip: rect(20px, 450px, 16px, 0);
+    }
+    20% {
+      clip: rect(30px, 450px, 3px, 0);
+    }
+    30% {
+      clip: rect(40px, 450px, 78px, 0);
+    }
+    40% {
+      clip: rect(50px, 450px, 13px, 0);
+    }
+    50% {
+      clip: rect(60px, 450px, 5px, 0);
+    }
+    60% {
+      clip: rect(70px, 450px, 76px, 0);
+    }
+    70% {
+      clip: rect(80px, 450px, 16px, 0);
+    }
+    80% {
+      clip: rect(90px, 450px, 3px, 55);
+    }
+    90% {
+      clip: rect(100px, 450px, 78px, 52);
+    }
+    100% {
+      clip: rect(90px, 450px, 13px, 0);
+    }
+}
+
+.glitch::before {
+  left: 2px;
+  animation-duration: 4s;
+  animation-delay: 0.10s;
+  animation-name: move;
+	animation-iteration-count: infinite;
+  color: #4C483F;
+}
+.glitch::after {
+  left: -2px;
+  animation-duration: 2s;
+  animation-name: move;
+	animation-iteration-count: infinite;
+  color: #4C483F;
+}
+
+.map-button, .close-map-button {
+  width: 100px;
+  height: 100px;
+}
+
+.map-button {
+  filter: sepia(100%);
+}
+
+.minimap{
+  width: 500px;
+  height: 500px;
+}
+
+.close-map-button{
+  
+}
+
+.glitchimage:before,
+.glitchimage:after {
+  position: absolute;
+
 }
